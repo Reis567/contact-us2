@@ -1,52 +1,69 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
 
-*{
+:root {
+    --background-color1: #51287377;
+    --primary-color: #252041;
+    --secondary-color: white;
+    --primary-color-stgr:#100f1a;
+    --text-color1: white;
+    --text-color2: #252041;
+    --box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.6);
+}
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Oxanium' , sans-serif;
+    font-family: 'Oxanium', sans-serif;
 }
-p{
+
+p {
     font-weight: 400;
     font-size: 15px;
 }
-:root{
-    --background-color1: #51287377;
-}
-body{
+
+body {
     background: var(--background-color1);
     font-size: 14px;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 50px auto;
+    border-radius: 30px;
 }
 
-.contact-box{
-    background: white;
+.contact-box {
+    background: var(--secondary-color);
     display: flex;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
 }
 
-.contact-left{
+.contact-left {
     flex-basis: 60%;
     padding: 40px 60px;
+    background: var(--primary-color);
+    color: var(--text-color1);
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
 }
 
-.contact-right{
+.contact-right {
     flex-basis: 40%;
     padding: 40px;
-    background: #252041;
-    color: white;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
 }
 
-h1{
+h1 {
     margin-bottom: 10px;
 }
-.container p{
+
+.container p {
     margin-bottom: 40px;
 }
 
-.input-row{
+.input-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -56,56 +73,70 @@ h1{
     flex-basis: 45%;
 }
 
-input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #252041;
-    outline: none;
-}
-
-textarea{
+input,
+textarea {
     width: 100%;
     max-width: 800px;
-    max-height: 200px;
-    border-bottom: 1px solid #252041;
+    border: none;
+    border-bottom: 1px solid var(--text-color1);
     outline: none;
+    background: var(--primary-color);
+}
+
+textarea {
+    box-shadow: 0 0 0.7px var(--text-color1);
     padding: 10px;
     box-sizing: border-box;
 }
-label{
+
+label {
     margin-bottom: 5px;
     display: block;
-    color: #252041;
+    color: var(--text-color1);
     font-weight: 600;
 }
-button{
-    background: #252041;
-    color: white;
+
+button {
+    background: var(--secondary-color);
+    color: var(--primary-color);
     width: 100px;
     border: none;
     outline: none;
     height: 35px;
     border-radius: 15px;
     margin-top: 15px;
-}
-
-.contact-left h3{
-    color: #252041;
     font-weight: 900;
-    margin-bottom: 35px;
-    font-size: 22px;
 }
-.contact-right h3{
+.contact-left button:hover{
+    background: var(--primary-color-stgr);
     color: white;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    
+}
+
+
+.contact-left h3 {
+    color: var(--text-color1);
     font-weight: 900;
     margin-bottom: 35px;
     font-size: 22px;
 }
 
-tr td:first-child{
+
+
+.contact-right h3 {
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-bottom: 35px;
+    font-size: 22px;
+}
+
+tr td:first-child {
     padding-right: 20px;
 }
 
-tr td{
+tr td {
     padding-top: 15px;
 }
