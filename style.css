@@ -1,6 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Oxanium' , sans-serif;
+}
+p{
+    font-family: Times, serif;
 }
 :root{
     --background-color1: #51287377;
@@ -21,4 +28,19 @@ body{
 
 .contact-left{
     flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #252041;
+    color: white;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 40px;
 }
