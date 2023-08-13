@@ -140,3 +140,47 @@ tr td:first-child {
 tr td {
     padding-top: 15px;
 }
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+
+    .contact-left {
+        padding: 20px; /* Reduced padding for a cleaner look */
+        border-radius: 30px;
+        box-shadow: none;
+    }
+
+    .contact-right {
+        padding: 30px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 10px; /* Increased spacing between input groups */
+    }
+
+    input, textarea {
+        border-bottom: none;
+        border: 1px solid var(--text-color1);
+        padding: 10px; /* Increased padding for better touch interaction */
+        width: 90%;
+    }
+
+    label {
+        margin-bottom: 3px; /* Slightly reduced margin for labels */
+    }
+
+    button {
+        margin-top: 15px; /* Slightly increased top margin for button */
+    }
+}
