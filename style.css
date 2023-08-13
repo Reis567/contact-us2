@@ -61,3 +61,29 @@ input{
     border-bottom: 1px solid #252041;
     outline: none;
 }
+
+textarea{
+    width: 100%;
+    max-width: 800px;
+    max-height: 200px;
+    border-bottom: 1px solid #252041;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+    color: #252041;
+    font-weight: 600;
+}
+button{
+    background: #252041;
+    color: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
