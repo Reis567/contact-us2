@@ -2,6 +2,7 @@
 
 :root {
     --background-color1: #51287377;
+    --background-color2: #6712ad77;
     --primary-color: #252041;
     --secondary-color: white;
     --primary-color-stgr:#100f1a;
@@ -141,6 +142,26 @@ tr td {
     padding-top: 15px;
 }
 
+.github-button a{
+    width: 90%;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: .5s;
+
+}
+.github-button a:hover {
+    background-color: var(--background-color2);
+    box-shadow: var(--box-shadow);
+    color: var(--text-color2);
+    
+}
 
 /* Mobile Styles */
 @media (max-width: 767px) {
