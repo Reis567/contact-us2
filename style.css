@@ -3,5 +3,22 @@
     padding: 0;
 }
 :root{
+    --background-color1: #51287377;
+}
+body{
+    background: var(--background-color1);
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
 
+.contact-box{
+    background: white;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
 }
